@@ -1,0 +1,23 @@
+h2 {
+    color: blueviolet;
+    background-color: darkcyan;
+}
+
+button {
+    color: red;
+    background-color: #AABBCC;
+    /* Hexadecimal for colors # red channel AA, since 16 * 16 = 256 */
+    /* So we have # red channel green channel blue channel */
+    /*            #       AA        BB            CC */
+}
+
+p {
+    color: rgb(255, 255, 137);
+    background-color: rgb(89, 151, 0)
+        /* rgb(red channel, green channel, blue channel) */
+
+}
+
+body {
+    background-color: #000;
+}

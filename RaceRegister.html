@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Race REgistration Form</title>
+</head>
+
+<body>
+    <main>
+        <h1>Race Registration!</h1>
+
+        <video controls muted autoplay loop witdh="10" height="300">
+            <source src="dancing.mp4">
+            <source src="dancingbackup.mp4">
+            This browser does not support videos
+        </video>
+        <audio loop muted autoplay controls>
+            <source src="music.mp3">
+            This browser does not support audio
+        </audio>
+
+        <form action="/dummy">
+            <fieldset>
+                <legend>Form for racer</legend>
+                <section>
+                    <label for="firstName">First Name</label>
+                    <input type="text" required id="firstName" name="first_Name" placeholder="Enter your first name">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" required id="lastName" name="lastName" placeholder="Enter your last name">
+                </section>
+
+                <section>
+                    <p>Select a race:</p>
+                    <section>
+                        <input type="radio" value="FunRun5k" id="FunRun5K" name="raceSelect" />
+                        <label for="FunRun5K">Fun Run 5k</label>
+                    </section>
+                    <section>
+                        <input type="radio" value="HalfMarathon" id="HalfMarathon" name="raceSelect" />
+                        <label for="HalfMarathon">Half Marathon</label>
+                    </section>
+                    <section>
+                        <input type="radio" value="FullMarathon" id="FullMarathon" name="raceSelect" />
+                        <label for="FullMarathon">Full Marathon</label>
+                    </section>
+                </section>
+
+                <section>
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" name="email" placeholder="Email">
+                    <label for="password">Password</label>
+                    <input type="password" required id="password" name="password" minlength="5" maxlength="20"
+                        placeholder="password(5-20)">
+                </section>
+
+                <section>
+                    <label for="ageGroup">Select Age Group</label>
+                    <select name="selectGroup" id="ageGroup" required>
+                        <option value="under 18" selected>Under 18</option>
+                        <option value="over 18">Over 18</option>
+                    </select>
+                </section>
+                <section>
+                    <label for="fileUpload">Choose a picture of yourself</label>
+                    <input type="file" name="profilePicture" id="fileUpload" multiple accept=".png, .jpg, .jpeg">
+                    <label for="random">Choose a random image</label>
+                    <input type="file" id="random" name="randomPicture" multiple accept="image/*">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Choose an Icecream</legend>
+
+                <label for="flavor">Choose a flavor</label>
+                <input list="ice-cream-flavors" id="flavor" name="flavor">
+
+                <datalist id="ice-cream-flavors">
+                    <option value="Vanilla">Vanilla</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Oreo">Oreo</option>
+                </datalist>
+
+            </fieldset>
+
+            <button type="submit">Register!</button>
+
+
+        </form>
+
+        <details>
+            <summary>HEY!</summary>
+            Thanks for signing up, you are doing yourself a very big favor
+        </details>
+    </main>
+
+
+</body>
+
+
+
+</html>

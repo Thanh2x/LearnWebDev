@@ -1,0 +1,125 @@
+* {
+    /* color: black; */
+}
+
+/* Element selectors */
+button {
+    font-size: 40px;
+}
+
+h1,
+h2 {
+    color: magenta;
+}
+
+/* ID selectors */
+
+#signUpButton {
+    background-color: #AABBCC;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* #logInButton {
+    background-color: #CCBBAA;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-decoration: blue dashed overline 10px;
+} */
+
+span {
+    color: #AABBCC;
+}
+
+/* Class Selector */
+.tag {
+    background-color: rgb(78, 52, 33);
+    font-size: 15px;
+    color: rgb(214, 178, 153);
+}
+
+/* Decendent selectors */
+.post span a {
+    color: rgb(51, 201, 38);
+}
+
+footer a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* Adjacent selector */
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+}
+
+/* Direct child combinator */
+footer>a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Attribute */
+input[placeholder="search"] {
+    font-size: 30px;
+    background-color: red;
+    color: green;
+}
+
+footer>a:hover {
+    color: black;
+    text-decoration: blue wavy underline;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+footer a:hover {
+    font-size: 20px;
+}
+
+section button:active {
+    color: black;
+    background-color: red;
+}
+
+.post:nth-of-type(2n - 1) {
+    background-color: #c7ffcc;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #eeffc7;
+}
+
+h2::first-letter {
+    font-size: 30px;
+    text-decoration: blue dashed overline;
+}
+
+p::first-line {
+    color: rgb(240, 37, 240);
+}
+
+p::selection {
+    background-color: crimson;
+    color: white;
+}
+
+footer a::after {
+    color: blue;
+}
+
+.post button:hover {
+    background-color: red !important;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+/* Inheritance if the other elements does not have their field already set */
+body {
+    color: black;
+}

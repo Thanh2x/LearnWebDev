@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Forms Demo</h1>
+        <!-- The action attributions specify where the data is sent, like a server or url -->
+        <!-- Data are sent via HTTPS requests -->
+        <form action="https://www.google.com">
+            <section>
+                <label for="username">Enter your username</label>
+                <input type="text" name="usename" placeholder="Enter your name" id="username" />
+            </section>
+
+            <section>
+                <label for="password">Enter a password</label>
+                <input type="password" name="password" placeholder="Enter your password" />
+            </section>
+
+            <input type="color" />
+
+            <input type="checkbox" />
+
+            <input type="radio" />
+
+            <input type="range" />
+
+            <input type="date" />
+
+            <input type="time" />
+
+            <input type="url" />
+
+            <input type="number" />
+            <section>
+                <button type="submit">Submit button!</button>
+                <button type="button">Button that does nothing!</button>
+                <input type="button" value="button that also does nothing" />
+            </section>
+        </form>
+
+        <form action="https://wwww.reddit.com/search">
+            <label for="searchReddit">
+                Enter a subreddit
+            </label>
+            <input type="text" name="q" id="searchReddit" />
+
+            <button type="submit">Search</button>
+
+
+        </form>
+
+        <h2>More inputs</h2>
+
+        <form action="/birds">
+            <label for="agree">Do you agree to the terms and conditions?</label>
+            <input type="checkbox" name="agree" id="agree" unchecked>
+
+
+            <section>
+                <label for="xs">XS</label>
+                <input type="radio" name="size" id="xs" value="m">
+                <label for="m">N</label>
+                <input type="radio" name="size" id="m" value="m">
+                <label for="l">L</label>
+                <input type="radio" name="size" id="l" value="l">
+            </section>
+
+            <section>
+                <label for="favoritePet">Select your favorite pet</label>
+                <select name="favoritePet" id="favoritePet">
+                    <option value="" selected>Please select an option</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Fish">Fish</option>
+                </select>
+            </section>
+
+            <section>
+                <label for="cheese">Amount of Cheese</label>
+                <input type="range" value="75" min="1" max="101" step="25" name="cheese_level" id="cheese">
+            </section>
+
+            <section>
+                <label for="request">Any requests?</label>
+                <textarea id="request" rows="20" cols="40" placeholder="type something" name="request"></textarea>
+            </section>
+
+            <button type="submit">Submit!</button>
+
+        </form>
+
+        <h2>Forms validation</h2>
+        <form action="/dummy">
+
+            <section>
+                <label for="firstName">First Name:</label>
+                <input type="text" placeholder="Enter your first name" required name="firstName" id="firstName">
+            </section>
+            <section>
+                <label for="lastName">Last Name:</label>
+                <input type="text" minlength="2" maxlength="20" name="lastName" id="lastName"
+                    placeholder="Enter your last name" required />
+            </section>
+
+            <section>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="1" max="130" required />
+            </section>
+
+            <section>
+                <label for="email">Email:</label>
+                <input type="email" required name="email" id="email">
+
+                <label for="URL">URL:</label>
+                <input type="url" required name="URL" id="URL">
+            </section>
+
+            <button type="submit">Submit</button>
+
+    </main>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-family: "Big Calson", "Impact", Helvetica, sans-serif;
+    font-size: 200px;
+}
+
+p {
+    font-weight: 100;
+    /* text-decoration: blue dashed underline; */
+    line-height: 2;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+}
