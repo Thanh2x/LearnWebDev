@@ -73,7 +73,7 @@ span {
 .bobby {
     width: 50%;
     height: 50%;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
 }
 
 html {
@@ -83,5 +83,6 @@ html {
 .bobby2 {
     width: 10rem;
     height: 2rem;
-    background-color: brown;
+    background-color: #db4f4f;
+    opacity: 0.8;
 }
