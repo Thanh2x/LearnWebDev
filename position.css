@@ -40,5 +40,5 @@ div {
 
 #sticky #middle {
     position: sticky;
-    top: 10px;
+    top: 0;
 }
